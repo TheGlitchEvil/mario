@@ -125,7 +125,22 @@ function copiarAlPortapapeles2() {
 	     <div class="container">
 	
 
-	<button onclick="copiarAlPortapapeles2()">Crossout</button>
+	<button onclick="copiarAlPortapapeles()">Copiarossut</button>
+
+<script>
+function copiarAlPortapapeles() {
+  const rutaACopiar = "C:\\Program Files (x86)\\NVIDiA_Grid_Bundle\\crossout_gfn_pc\\common\\Crossout\\launcher.exe";
+
+  navigator.clipboard.writeText(rutaACopiar)
+    .then(() => {
+      alert("Ruta copiada al portapapeles con éxito.");
+    })
+    .catch(err => {
+      console.error("Error al copiar:", err);
+      alert("No se pudo copiar la ruta. Verifique los permisos del navegador.");
+    });
+}
+</script>
 
 </div>
 
