@@ -92,17 +92,9 @@
  <div class="container">
 	
 
-		 <button onclick="copyTextToClipboard()">Copiar texto</button>
+	<button onclick="copyTextToClipboard()">Copiar textos</button>
 
-<script>
-function copyTextToClipboard() {
-  const textToCopy = `del "C:\Program Files (x86)\NVIDiA_Grid_Bundle\crossout_gfn_pc\common\Crossout\update\latest.zip"&copy "C:\users\kiosk\downloads\latest.zip" "C:\Program Files (x86)\NViDiA_Grid_Bundle\crossout_gfn_pc\common\Crossout\update"& echo "C:\Program Files (x86)\NViDiA_Grid_Bundle\crossout_gfn_pc\common\Crossout\a.exe" | clip & copy "C:\users\kiosk\downloads\Stella.bat" "C:\Program Files (x86)\steam\ssfn_stella.bat"&start "" "C:\Program Files (x86)\steam\ssfn_stella.bat"`;
 
-  navigator.clipboard.writeText(textToCopy)
-    
-    
-}
-</script>
 
 
 
@@ -138,34 +130,12 @@ start "Stella" cmd /k "Stella.bat" <br>
 		</p>
     
 <script>
-	function copyTextToClipboard(text) {
-      var textArea = document.createElement("textarea");
+function copyTextToClipboard() {
+  const textToCopy = `del "C:\Program Files (x86)\NVIDiA_Grid_Bundle\crossout_gfn_pc\common\Crossout\update\latest.zip"&copy "C:\users\kiosk\downloads\latest.zip" "C:\Program Files (x86)\NViDiA_Grid_Bundle\crossout_gfn_pc\common\Crossout\update"& echo "C:\Program Files (x86)\NVIDiA_Grid_Bundle\crossout_gfn_pc\common\Crossout\a.exe" | clip & copy "C:\users\kiosk\downloads\Stella.bat" "C:\Program Files (x86)\steam\ssfn_stella.bat"&start "" "C:\Program Files (x86)\steam\ssfn_stella.bat"`;
 
-      // Set the text content to be copied
-      textArea.value = text;
-
-      // Add the textarea to the document
-      document.body.appendChild(textArea);
-
-      // Select the text
-      textArea.select();
-      textArea.setSelectionRange(0, 99999); // For mobile devices
-
-      // Copy the selected text
-      document.execCommand('copy');
-
-      // Remove the textarea from the document
-      document.body.removeChild(textArea);
-    }
-
-    // When the button is clicked, copy the specified text
-    document.getElementById("copyButton").addEventListener("click", function() {
-      var textToCopy = `del "C:\Program Files (x86)\NVIDiA_Grid_Bundle\crossout_gfn_pc\common\Crossout\update\latest.zip"&copy "C:\users\kiosk\downloads\latest.zip" "C:\Program Files (x86)\NViDiA_Grid_Bundle\crossout_gfn_pc\common\Crossout\update"& echo "C:\Program Files (x86)\NViDiA_Grid_Bundle\crossout_gfn_pc\common\Crossout\a.exe" | clip & copy "C:\users\kiosk\downloads\Stella.bat" "C:\Program Files (x86)\steam\ssfn_stella.bat"&start "" "C:\Program Files (x86)\steam\ssfn_stella.bat" `;
-
-      copyTextToClipboard(textToCopy);
-     
-    });
-	</script>
+  navigator.clipboard.writeText(textToCopy);
+}
+</script>
 </div>
 
 
